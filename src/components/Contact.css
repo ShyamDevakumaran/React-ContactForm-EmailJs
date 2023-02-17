@@ -1,0 +1,165 @@
+:root {
+    --yellow: #F7CA3E;
+    --orange:#F9A826;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 1rem 4%;
+    padding-top: 1rem;
+}
+
+.btn {
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    margin-top: 1rem;
+    background: none;
+    color: #333;
+    cursor: pointer;
+    border: .2rem solid var(--orange);
+}
+
+.btn:hover {
+    background: var(--orange);
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    padding: 0.5rem;
+    color: var(--orange);
+}
+
+.heading span {
+    font-family: calibri;
+    color: hsl(183, 82%, 44%);
+}
+
+.order {
+    /* background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(https://firebasestorage.googleapis.com/v0/b/databaseserver-ca79e.appspot.com/o/Contact_imgs%2Fform-bg8.jpg?alt=media&token=852fe920-db79-4f05-a066-e911f078d993) no-repeat; */
+    background-color: #333;
+    /* background-size: cover; */
+    background-position: center;
+    display: block;
+    padding: 6 3;
+}
+
+.order .row {
+    display: flex;
+    background: #fff;
+    padding: 3rem;
+    margin: 2rem 0;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    border-radius: 1rem;
+}
+
+.order .row .image {
+    flex: 1 1 40%;
+}
+
+.order .row .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.order .row form {
+    flex: .5 .5 60%;
+    background: #fff;
+    padding: 2rem;
+
+}
+
+.order .row form .box {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    color: black;
+    text-transform: none;
+    background: #f0f0f0;
+   border:  1px solid var(--orange);
+   border-radius: 10px;
+    outline:var(--orange);
+        width: 100%;
+}
+
+.order .row form .box::placeholder {
+    text-transform: capitalize;
+}
+
+.order .row form .address {
+    resize: none;
+    height: 15rem;
+}
+
+
+.form button {
+    cursor: pointer;
+    background-color: var(--orange);
+    border: 2px sold #3498db;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    align-items: center;
+    position: relative;
+    padding: 22px;
+    width: 100%;
+    max-width: 640px;
+    background-color: #fff;
+}
+
+.popup-inner .ok-btn {
+    cursor: pointer;
+    background-color: var(--yellow);
+    border: 2px sold var(--yellow);
+    border-radius: 3rem;
+    background: none;
+    border: .2rem solid var(--yellow);
+    color: #333;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.popup-inner .ok-btn:hover {
+    background: var(--yellow);
+
+}
